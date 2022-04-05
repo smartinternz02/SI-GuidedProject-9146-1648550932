@@ -1,0 +1,673 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "853d42d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2401\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=pow(7,4)\n",
+    "print(a)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "8fb415ac",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['hello', 'world!']\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=\"hello world!\"\n",
+    "n1=n.split(\" \")\n",
+    "print(n1)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "16c349aa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The diameter of earth is12742\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=\"The diameter of earth is{x}\".format(x=12742)\n",
+    "print(n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "913d35f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello\n"
+     ]
+    }
+   ],
+   "source": [
+    "l=[1,2,[3,4],[\"hello\",\"world\"]]\n",
+    "print(l[3][0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "358494b1",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "KeyError",
+     "evalue": "2401",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp/ipykernel_30524/4120773793.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[0mk\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;33m{\u001b[0m\u001b[1;34m'a'\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m1\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m2\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m{\u001b[0m\u001b[1;34m't'\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m\"oh\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;34m\"man\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;34m\"inception\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m{\u001b[0m\u001b[1;34m't1'\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m1\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m2\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;34m'hello'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m}\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m}\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m}\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mk\u001b[0m\u001b[1;33m[\u001b[0m\u001b[0ma\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m[\u001b[0m\u001b[0mt\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m[\u001b[0m\u001b[0mt1\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m: 2401"
+     ]
+    }
+   ],
+   "source": [
+    "k={'a':[1,2,3,{'t':[\"oh\",\"man\",\"inception\",{'t1':[1,2,3,'hello']}]}]}\n",
+    "print(k[a][t][t1][3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "b838b81c",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "list indices must be integers or slices, not str",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp/ipykernel_30524/1955377004.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[0mk\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;33m{\u001b[0m\u001b[1;34m'a'\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m1\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m2\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m{\u001b[0m\u001b[1;34m't'\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m\"oh\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;34m\"man\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;34m\"inception\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m{\u001b[0m\u001b[1;34m't1'\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m1\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m2\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;34m'hello'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m}\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m}\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m}\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mk\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m'a'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m't'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m't1'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m: list indices must be integers or slices, not str"
+     ]
+    }
+   ],
+   "source": [
+    "k={'a':[1,2,3,{'t':[\"oh\",\"man\",\"inception\",{'t1':[1,2,3,'hello']}]}]}\n",
+    "print(k['a']['t']['t1'][3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "3cb270d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "KeyError",
+     "evalue": "3",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp/ipykernel_30524/4017655277.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[0mk\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;33m{\u001b[0m\u001b[1;34m'a'\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m1\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m2\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m{\u001b[0m\u001b[1;34m't'\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m\"oh\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;34m\"man\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;34m\"inception\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m{\u001b[0m\u001b[1;34m't1'\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m1\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m2\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;34m'hello'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m}\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m}\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m}\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mk\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m'a'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m: 3"
+     ]
+    }
+   ],
+   "source": [
+    "k={'a':[1,2,3,{'t':[\"oh\",\"man\",\"inception\",{'t1':[1,2,3,'hello']}]}]}\n",
+    "print(k['a'][3][3][3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "0e4ff036",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello\n"
+     ]
+    }
+   ],
+   "source": [
+    "k={'a':[1,2,3,{'t':[\"oh\",\"man\",\"inception\",{'t1':[1,2,3,'hello']}]}]}\n",
+    "print(k['a'][3]['t'][3]['t1'][3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "0d0fd912",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'tuple' object does not support item assignment",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp/ipykernel_30524/1372888382.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[0mt\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"yellow\"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;34m\"orange\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m \u001b[0mt\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m1\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;34m\"Apple\"\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      3\u001b[0m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mt\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mTypeError\u001b[0m: 'tuple' object does not support item assignment"
+     ]
+    }
+   ],
+   "source": [
+    "t=(\"yellow\",\"orange\")\n",
+    "t[1]=\"Apple\"\n",
+    "print(t)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "c6712908",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('yellow', 'apple')\n"
+     ]
+    }
+   ],
+   "source": [
+    "t=(\"yellow\",\"orange\")\n",
+    "l=list(t)\n",
+    "l[1]=\"apple\"\n",
+    "t1=tuple(l)\n",
+    "print(t1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "ab897f24",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "gmail.com\n"
+     ]
+    }
+   ],
+   "source": [
+    "def fun(s):\n",
+    "    l=s.split(\"@\")\n",
+    "    print(l[-1])\n",
+    "s=\"hariii@gmail.com\"\n",
+    "fun(s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "2c2298cc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my dog name is tomy\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    s.upper()\n",
+    "    l=s.split(\" \")\n",
+    "    if(\"dog\" in l):\n",
+    "        return \"True\"\n",
+    "    else:\n",
+    "        return \"False\"\n",
+    "s=\"my dog name is tomy\"\n",
+    "a=fun(s)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9320cf67",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "44732cc8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my Dog name is tomy\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.upper()\n",
+    "    print(a)\n",
+    "    l=a.split(\" \")\n",
+    "    if(\"dog\" in l):\n",
+    "        print(\"True\")\n",
+    "    else:\n",
+    "        print(\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "a=fun(s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3736c536",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "bd4a7b4d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my Dog name is tomy\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.lower()\n",
+    "    l=a.split(\" \")\n",
+    "    i=\"dog\"\n",
+    "    if any(i in l for i in l):\n",
+    "        return (\"True\")\n",
+    "    else:\n",
+    "        return (\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "a=fun(s)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "c118d2c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my Dog name is tomy\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.lower()\n",
+    "    l=a.split(\" \")\n",
+    "    i=\"dog\"\n",
+    "    if any(i in l for i in l):\n",
+    "        return (\"True\")\n",
+    "    else:\n",
+    "        return (\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "a=fun(s)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "0b9d9c04",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my Dog name is tomy\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.lower()\n",
+    "    l=a.split(\" \")\n",
+    "    c=\"dog\"\n",
+    "    if any(i==c for i in l):\n",
+    "        return (\"True\")\n",
+    "    else:\n",
+    "        return (\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "a=fun(s)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "62f9f315",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "fd57df9e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my Dog name is tomy\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.lower()\n",
+    "    c=\"dog\"\n",
+    "    if c in a:\n",
+    "        return (\"True\")\n",
+    "    else:\n",
+    "        return (\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "a=fun(s)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "c0f008ca",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my Dog name is tomy\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.lower()\n",
+    "    c=\"dog\"\n",
+    "    if c in a:\n",
+    "        return (\"True\")\n",
+    "    else:\n",
+    "        return (\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "print(fun(s))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "4b2a3aee",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my Dog name is tomy\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.lower()\n",
+    "    c=\"dog\"\n",
+    "    if c in a:\n",
+    "        return (\"True\")\n",
+    "    else:\n",
+    "        return (\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "print(dog(s))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "b606fdca",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.lower()\n",
+    "    c=\"dog\"\n",
+    "    if c in a:\n",
+    "        return (\"True\")\n",
+    "    else:\n",
+    "        return (\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "print(dog(s))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "c3d13bba",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.lower()\n",
+    "    l=a.split(\" \")\n",
+    "    c=\"dog\"\n",
+    "    if any(i==c for i in l):\n",
+    "        return (\"True\")\n",
+    "    else:\n",
+    "        return (\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "a=dog(s)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "e68bb7a9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.lower()\n",
+    "    l=a.split(\" \")\n",
+    "    if(\"dog\" in l):\n",
+    "        return (\"True\")\n",
+    "    else:\n",
+    "        return (\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "a=dog(s)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "5ffe3170",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "def dog(s):\n",
+    "    a=s.lower()\n",
+    "    l=a.split(\" \")\n",
+    "    if(\"dog\" in l):\n",
+    "        return (\"True\")\n",
+    "    else:\n",
+    "        return (\"False\")\n",
+    "s=\"my Dog name is tomy\"\n",
+    "a=dog(s)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "0e2d7868",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "s=\"dog is a good one. dog can always be loyal to humans\"\n",
+    "s.lower()\n",
+    "print(s.count(\"dog\"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "0f0dbe14",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "NO ticket\n"
+     ]
+    }
+   ],
+   "source": [
+    "def speed(spe,is_birthday):\n",
+    "    if(is_birthday):\n",
+    "        spee=spe-5\n",
+    "    else:\n",
+    "        spee=spe\n",
+    "    if(spee>80):\n",
+    "        return(\"BIG TICKET\")\n",
+    "    elif(spee>60 and spee<=80):\n",
+    "        return(\"SMALL ticket\")\n",
+    "    else:\n",
+    "        return(\"NO ticket\")\n",
+    "s=50\n",
+    "is_birthday=\"yes\"\n",
+    "a=speed(s,is_birthday)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "84ff9d7a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
